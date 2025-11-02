@@ -1,0 +1,80 @@
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+out/
+dist/
+*.vsix
+
+# Version control
+.git/
+.gitignore
+.github/
+
+# Development files
+.vscode/
+.vscode-test/
+.DS_Store
+*.code-workspace
+
+# Testing
+*.test.ts
+*.spec.ts
+test/
+tests/
+coverage/
+.nyc_output/
+
+# Documentation
+*.md
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+docs/
+
+# Configuration files
+tsconfig.json
+.eslintrc.json
+.prettierrc
+.prettierignore
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+azure-pipelines.yml
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# OS
+Thumbs.db
+.DS_Store
+ehthumbs.db
+
+# Source maps
+*.map
+
+# Type definitions (already bundled)
+*.d.ts
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# License and metadata (keep these - they're needed!)
+# Explicitly NOT ignoring:
+# - LICENSE
+# - package.json
+# - package-lock.json
+# - src/
+# - syntaxes/
+# - language-configuration.json

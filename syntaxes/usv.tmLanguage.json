@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "USV",
+  "scopeName": "source.usv",
+  "patterns": [{ "include": "#data-content" }],
+  "repository": {
+    "data-content": {
+      "match": "[^␟␞␝␜␛]+",
+      "name": "string.unquoted.usv",
+      "comment": "Data content - any characters between separators"
+    }
+  }
+}

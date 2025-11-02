@@ -1,0 +1,60 @@
+{
+  "name": "USV Dark",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1e1e1e",
+    "editor.foreground": "#d4d4d4",
+    "editor.lineNumberForeground": "#858585",
+    "editor.selectionBackground": "#264f78",
+    "editorCursor.foreground": "#aeafad"
+  },
+  "tokenColors": [
+    {
+      "name": "Unit Separator (Field)",
+      "scope": "punctuation.separator.unit.usv",
+      "settings": {
+        "foreground": "#4EC9B0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Record Separator (Row)",
+      "scope": "punctuation.separator.record.usv",
+      "settings": {
+        "foreground": "#CE9178",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Group Separator",
+      "scope": "punctuation.separator.group.usv",
+      "settings": {
+        "foreground": "#9CDCFE",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "File Separator",
+      "scope": "punctuation.separator.file.usv",
+      "settings": {
+        "foreground": "#C586C0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Escape Character",
+      "scope": "constant.character.escape.usv",
+      "settings": {
+        "foreground": "#D7BA7D",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Data Content",
+      "scope": "string.unquoted.usv",
+      "settings": {
+        "foreground": "#D4D4D4"
+      }
+    }
+  ]
+}

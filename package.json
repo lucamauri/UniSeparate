@@ -1,0 +1,138 @@
+{
+  "name": "uniseparate",
+  "displayName": "UniSeparate - USV Data Editor",
+  "description": "Provides syntax highlighting, editing, and conversion support for Unicode Separated Values (USV) files and other delimited data formats.",
+  "version": "1.0.0",
+  "publisher": "lucamauri",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "USV",
+    "Unicode Separated Values",
+    "delimiter",
+    "syntax highlighting",
+    "data editor",
+    "CSV"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucamauri/UniSeparate"
+  },
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "usv",
+        "aliases": [
+          "USV",
+          "usv"
+        ],
+        "extensions": [
+          ".usv",
+          ".usx",
+          ".uss"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "usv",
+        "scopeName": "source.usv",
+        "path": "./syntaxes/usv.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "uniseparate.csvToUsv",
+        "title": "Convert CSV to USV",
+        "category": "UniSeparate"
+      },
+      {
+        "command": "uniseparate.csvToUsvNew",
+        "title": "Convert CSV to USV (New File)",
+        "category": "UniSeparate"
+      },
+      {
+        "command": "uniseparate.usvToCsv",
+        "title": "Convert USV to CSV",
+        "category": "UniSeparate"
+      },
+      {
+        "command": "uniseparate.usvToCsvNew",
+        "title": "Convert USV to CSV (New File)",
+        "category": "UniSeparate"
+      },
+      {
+        "command": "uniseparate.saveAsUsv",
+        "title": "Save As USV File",
+        "category": "UniSeparate"
+      },
+      {
+        "command": "uniseparate.saveAsCsv",
+        "title": "Save As CSV File",
+        "category": "UniSeparate"
+      },
+      {
+        "command": "uniseparate.openPreview",
+        "title": "Open USV Preview",
+        "category": "UniSeparate"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "uniseparate.csvToUsv",
+          "group": "1_modification",
+          "when": "resourceLangId == csv"
+        },
+        {
+          "command": "uniseparate.csvToUsvNew",
+          "group": "1_modification",
+          "when": "resourceLangId == csv"
+        },
+        {
+          "command": "uniseparate.usvToCsv",
+          "group": "1_modification",
+          "when": "resourceLangId == usv"
+        },
+        {
+          "command": "uniseparate.usvToCsvNew",
+          "group": "1_modification",
+          "when": "resourceLangId == usv"
+        },
+        {
+          "command": "uniseparate.openPreview",
+          "group": "5_cutcopypaste",
+          "when": "resourceLangId == usv"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.105.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "eslint": "^9.36.0",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
