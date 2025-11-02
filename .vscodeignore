@@ -3,8 +3,7 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
-# Build outputs
-out/
+# Build outputs to exclude
 dist/
 *.vsix
 
@@ -59,22 +58,21 @@ Thumbs.db
 .DS_Store
 ehthumbs.db
 
-# Source maps
-*.map
+# Source maps in src folder (we keep .js maps in out)
+src/**/*.map
 
-# Type definitions (already bundled)
-*.d.ts
+# Type definitions source (we keep compiled JS)
+src/**/*.d.ts
 
 # Temporary files
 *.tmp
 *.temp
 *.log
 
-# License and metadata (keep these - they're needed!)
-# Explicitly NOT ignoring:
-# - LICENSE
-# - package.json
-# - package-lock.json
-# - src/
-# - syntaxes/
-# - language-configuration.json
+# Keep these files - they are NEEDED:
+# ✅ out/              - Compiled JavaScript (REQUIRED)
+# ✅ src/              - Source TypeScript (optional, small)
+# ✅ syntaxes/         - Grammar files (REQUIRED)
+# ✅ LICENSE           - License file (REQUIRED)
+# ✅ package.json      - Metadata (REQUIRED)
+# ✅ language-configuration.json - Config (REQUIRED)
