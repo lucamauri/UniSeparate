@@ -2,7 +2,7 @@
   "name": "uniseparate",
   "displayName": "UniSeparate - USV Data Editor",
   "description": "Provides syntax highlighting, editing, and conversion support for Unicode Separated Values (USV) files and other delimited data formats.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "lucamauri",
   "engines": {
     "vscode": "^1.85.0"
