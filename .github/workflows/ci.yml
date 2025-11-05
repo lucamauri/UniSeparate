@@ -37,12 +37,5 @@ jobs:
         run: npm run vsce:package
         continue-on-error: true
 
-      - name: Upload VSIX artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: uniseparate-${{ matrix.node-version }}.vsix
-          path: uniseparate-*.vsix
-        continue-on-error: true
-
       - name: Build Status
         run: echo "✅ Build completed successfully!"
