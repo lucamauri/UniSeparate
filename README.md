@@ -7,8 +7,8 @@ A VS Code extension for working with **Unicode Separated Values (USV)** files wi
 ![Status](https://img.shields.io/badge/status-Active-brightgreen)
 [![CI Status](https://github.com/lucamauri/uniseparate/actions/workflows/ci.yml/badge.svg)](https://github.com/lucamauri/uniseparate/actions/workflows/ci.yml)
 [![Publish Status](https://github.com/lucamauri/uniseparate/actions/workflows/publish.yml/badge.svg)](https://github.com/lucamauri/uniseparate/actions/workflows/publish.yml)
-[![VS Code Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/lucamauri.uniseparate)](https://marketplace.visualstudio.com/items?itemName=lucamauri.uniseparate)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/lucamauri.uniseparate)](https://marketplace.visualstudio.com/items?itemName=lucamauri.uniseparate)
+[![VS Code Marketplace Version](https://vsmarketplacebadges.dev/version/lucamauri.uniseparate.svg)](https://marketplace.visualstudio.com/items?itemName=lucamauri.uniseparate)
+[![Downloads](https://vsmarketplacebadges.dev/downloads-short/lucamauri.uniseparate.svg)](https://marketplace.visualstudio.com/items?itemName=lucamauri.uniseparate)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.x-brightgreen)](package.json)
 
 
